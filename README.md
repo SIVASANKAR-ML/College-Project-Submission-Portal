@@ -45,3 +45,12 @@ Option to print or export project summaries.
 🛠️ Installation
 
 You can install this app using the Frappe Bench CLI
+
+```bash
+cd $PATH_TO_YOUR_BENCH
+bench get-app https://github.com/SIVASANKAR-ML/College-Project-Submission-Portal.git --branch main
+bench install-app project_portal
+
+🧑‍💻 Tech Stack
+
+Framework: Frappe Framework
