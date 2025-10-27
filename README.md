@@ -1,40 +1,47 @@
-### Project Portal
+🏫 College Project Submission Portal
 
-Project submission system
+A Frappe-based web application designed to simplify and streamline the project submission and approval process within colleges.
+Teachers can publish projects, students can submit their work online, and all approvals flow seamlessly through multiple levels of review — from Teacher → Project Head → HOD — with automated email notifications at each step.
 
-### Installation
+🚀 Features
+👩‍🏫 For Teachers
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+Publish new projects with title, description, department, and submission deadlines.
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch main
-bench install-app project_portal
-```
+Receive instant email notifications when students submit projects.
 
-### Contributing
+Review, approve, or reject student submissions directly from the dashboard.
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+View department-wise project reports and generate printable acknowledgments.
 
-```bash
-cd apps/project_portal
-pre-commit install
-```
+🎓 For Students
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+View only projects related to their department.
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
-### CI
+Submit completed project work online with attachments.
 
-This app can use GitHub Actions for CI. The following workflows are configured:
+Track submission status (Pending, Approved, Rejected, etc.).
 
-- CI: Installs this app and runs unit tests on every push to `develop` branch.
-- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
+Download acknowledgment slips after submission.
 
+🧑‍💼 For Project Head & HOD
 
-### License
+Multi-level approval workflow for submitted projects.
 
-mit
+Access detailed dashboards showing project statuses.
+
+Approve or reject submissions at their respective approval stages.
+
+📊 Dashboards & Reports
+
+Department-wise filters for projects and submissions.
+
+Quick summary cards for pending, approved, and rejected projects.
+
+Search and filter by department, status, or student name.
+
+Option to print or export project summaries.
+
+🛠️ Installation
+
+You can install this app using the Frappe Bench CLI
