@@ -1,56 +1,40 @@
-🏫 College Project Submission Portal
+# 🏫 College Project Submission Portal
 
-A Frappe-based web application designed to simplify and streamline the project submission and approval process within colleges.
-Teachers can publish projects, students can submit their work online, and all approvals flow seamlessly through multiple levels of review — from Teacher → Project Head → HOD — with automated email notifications at each step.
+A **Frappe-based web app** for managing project submissions in colleges.  
+Teachers can publish projects, students can submit work, and approvals flow through **Teacher → Project Head → HOD**, with automatic email updates at every stage.
 
-🚀 Features
-👩‍🏫 For Teachers
+---
 
-Publish new projects with title, description, department, and submission deadlines.
+## 🚀 Features
 
-Receive instant email notifications when students submit projects.
+### 👩‍🏫 Teachers
+- Create projects with title, department, and deadlines.  
+- Get email alerts for new submissions.  
+- Approve/reject projects from the dashboard.  
+- View reports and print acknowledgments.  
 
-Review, approve, or reject student submissions directly from the dashboard.
+### 🎓 Students
+- View department-specific projects.  
+- Submit work with attachments.  
+- Track project status and download acknowledgments.  
 
-View department-wise project reports and generate printable acknowledgments.
+### 🧑‍💼 Project Head & HOD
+- Multi-level approval workflow.  
+- Department dashboards and status tracking.  
 
-🎓 For Students
+### 📊 Reports
+- Filter by department, status, or student.  
+- Quick summary of pending and approved projects.  
+- Print or export reports.
 
-View only projects related to their department.
+---
 
-Submit completed project work online with attachments.
+## 🛠️ Installation
 
-Track submission status (Pending, Approved, Rejected, etc.).
-
-Download acknowledgment slips after submission.
-
-🧑‍💼 For Project Head & HOD
-
-Multi-level approval workflow for submitted projects.
-
-Access detailed dashboards showing project statuses.
-
-Approve or reject submissions at their respective approval stages.
-
-📊 Dashboards & Reports
-
-Department-wise filters for projects and submissions.
-
-Quick summary cards for pending, approved, and rejected projects.
-
-Search and filter by department, status, or student name.
-
-Option to print or export project summaries.
-
-🛠️ Installation
-
-You can install this app using the Frappe Bench CLI
+Install using [Frappe Bench](https://github.com/frappe/bench):
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
 bench get-app https://github.com/SIVASANKAR-ML/College-Project-Submission-Portal.git --branch main
 bench install-app project_portal
 
-🧑‍💻 Tech Stack
-
-Framework: Frappe Framework
