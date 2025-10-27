@@ -1,0 +1,45 @@
+<!-- <h1>Welcom</h1> -->
+ {% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="container my-5">
+  <h1 class="text-center mb-4">{{ page_title }}</h1>
+
+  {% if projects %}
+  <div class="row">
+    {% for project in projects %}
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title text-primary">{{ project.project_title }}</h4>
+          <p class="text-muted small mb-2">
+            <strong>Teacher:</strong> {{ project.teacher or "N/A" }}
+          </p>
+
+          {% set desc = project.description or "" %}
+          <p class="card-text flex-grow-1">
+            {{ desc[:150] }}{% if desc|length > 150 %}...{% endif %}
+          </p>
+
+          <p class="mt-2 mb-1">
+            <span class="badge bg-success">{{ project.status }}</span>
+          </p>
+          <p class="text-end text-secondary small mb-0">
+            <strong>Deadline:</strong> {{ project.deadline or "Not set" }}
+          </p>
+          <button class="btn btn-primary mt-3 align-self-start"
+            onclick="window.location.href='/#'">
+            View Details
+          </button>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="alert alert-info text-center">
+    No published projects available at the moment.
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

@@ -5,6 +5,8 @@ app_description = "Project submission system"
 app_email = "sivasankar.ml12@gmail.com"
 app_license = "mit"
 
+# home_page = "project_portal.api.get_home_page"
+
 # Apps
 # ------------------
 
@@ -20,6 +22,10 @@ app_license = "mit"
 # 		"has_permission": "project_portal.api.permission.has_app_permission"
 # 	}
 # ]
+
+
+
+
 
 # Includes in <head>
 # ------------------

@@ -1,0 +1,31 @@
+{
+ "cards": [
+  {
+   "card": "Published Projects"
+  },
+  {
+   "card": "Student Submissions"
+  },
+  {
+   "card": "Project Submissions Report"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-10-16 18:10:37.270748",
+ "dashboard_name": "Teacher Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-10-16 18:39:03.420408",
+ "modified_by": "Administrator",
+ "module": "Project Portal",
+ "name": "Teacher Dashboard",
+ "owner": "Administrator"
+}
